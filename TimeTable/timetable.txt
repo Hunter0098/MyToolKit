@@ -1,70 +1,70 @@
-monday
-OS
-DM
-Break
-Break
-Algo
-HRM Tut
-Break
-EVS
-Break
-tuesday
-Break
-Algo Tut
-Algo
-Break
-Maths
-OS
-Break
-Break
-Break
-wednesday
-Maths tut
-Maths
-Break
-DM
-Algo Lab
-Algo Lab
-Break
-Break
-Break
-thursday
-OS Lab
-OS Lab
-Break
-HRM
-EVS
-Break
-Maths
-Break
-Break
-friday
-OS Tut
-DM
-Break
-Break
-Algo
-HRM
-Break
-EVS
-Break
-saturday
-Break
-Break
-Break
-Break
-Break
-Break
-Break
-Break
-Break
-sunday
-Break
-Break
-Break
-Break
-Break
-Break
-Break
-Break
-Break
+monday,
+OS,
+DM,
+Break,
+Break,
+Algo,
+HRM Tut,
+Break,
+EVS,
+Break,
+tuesday,
+Break,
+Algo Tut,
+Algo,
+Break,
+Maths,
+OS,
+Break,
+Break,
+Break,
+wednesday,
+Maths tut,
+Maths,
+Break,
+DM,
+Algo Lab,
+Algo Lab,
+Break,
+Break,
+Break,
+thursday,
+OS Lab,
+OS Lab,
+Break,
+HRM,
+EVS,
+Break,
+Maths,
+Break,
+Break,
+friday,
+OS Tut,
+DM,
+Break,
+Break,
+Algo,
+HRM,
+Break,
+EVS,
+Break,
+saturday,
+Break,
+Break,
+Break,
+Break,
+Break,
+Break,
+Break,
+Break,
+Break,
+sunday,
+Break,
+Break,
+Break,
+Break,
+Break,
+Break,
+Break,
+Break,
+Break,
