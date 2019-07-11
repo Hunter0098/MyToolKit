@@ -1,0 +1,29 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">#5900b3</item>    <!-- Color of actionbar -->
+        <item name="colorPrimaryDark">#5900b3</item>    <!-- Color of statusbar -->
+        <item name="colorAccent">#114d4dff</item>   <!-- Color of all the UI controls -->
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:editTextColor">#FFFFFF</item>
+        <item name="android:textColorHint">#cccccc</item>
+    </style>
+
+    <!--My styles-->
+    <style name="AppTheme.Button" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:background">#55cc0000</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="AppTheme.ButtonBlue" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:background">#30000099</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="AppTheme.AlertDialogue" parent="Theme.AppCompat.Dialog.Alert">
+        <item name="android:background">#140033</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+</resources>
