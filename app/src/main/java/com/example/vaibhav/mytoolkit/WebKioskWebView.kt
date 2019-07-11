@@ -24,7 +24,7 @@ class WebKioskWebView : AppCompatActivity() {
         webkioskWebViewActivity.settings.loadWithOverviewMode = true
         webkioskWebViewActivity.settings.useWideViewPort = true
         webkioskWebViewActivity.settings.builtInZoomControls = true
-        webkioskWebViewActivity.settings.displayZoomControls = false
+        webkioskWebViewActivity.settings.displayZoomControls = true
         webkioskWebViewActivity.loadUrl("https://webkiosk.jiit.ac.in")
     }
 
