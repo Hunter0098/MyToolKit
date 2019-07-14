@@ -11,8 +11,8 @@ Break,
 tuesday,
 Break,
 Break,
-CN-217
-Break
+CN-217,
+Break,
 Software-228,
 Break,
 M.Science Tut-244,
