@@ -9,6 +9,7 @@
         <item name="android:editTextColor">#FFFFFF</item>
         <item name="android:textColorHint">#cccccc</item>
         <item name="android:navigationBarColor">#0d001a</item>
+        <item name="android:textCursorDrawable">@null</item>    <!-- To use textColor as cursor color -->
     </style>
 
     <!--My styles-->
