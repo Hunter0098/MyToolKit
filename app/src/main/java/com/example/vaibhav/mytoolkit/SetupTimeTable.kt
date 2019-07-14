@@ -40,7 +40,7 @@ class SetupTimeTable : AppCompatActivity() {
         setContentView(R.layout.setup_time_table)
 
         val actionbar = supportActionBar
-        actionbar!!.title = "Timetable SetupAttendance"
+        actionbar!!.title = "Timetable Setup"
         actionbar.setDisplayHomeAsUpEnabled(true)
 
         var data:String

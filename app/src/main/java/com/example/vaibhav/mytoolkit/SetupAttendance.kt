@@ -14,7 +14,7 @@ class SetupAttendance : AppCompatActivity() {
         setContentView(R.layout.setup_attendance)
 
         val actionbar = supportActionBar
-        actionbar!!.title = "Attendance SetupAttendance"
+        actionbar!!.title = "Attendance Setup"
         actionbar.setDisplayHomeAsUpEnabled(true)
 
         val buttonOnClick = findViewById<Button>(R.id.saveSetupDetails)
