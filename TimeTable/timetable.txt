@@ -11,7 +11,7 @@ Break,
 tuesday,
 Break,
 Break,
-CN-217
+CN-217,
 SHRM-118A,
 Software-228,
 M.Science-217,
