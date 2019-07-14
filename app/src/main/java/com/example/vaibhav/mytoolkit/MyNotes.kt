@@ -6,7 +6,6 @@ import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
 import android.widget.EditText
-import kotlinx.android.synthetic.main.activity_my_notes.*
 import java.io.FileInputStream
 import java.io.FileOutputStream
 import java.lang.Exception
@@ -16,7 +15,7 @@ class MyNotes : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_my_notes)
+        setContentView(R.layout.my_notes)
 
         val backButtonInActionbar = supportActionBar
         backButtonInActionbar!!.title = "MyNotes"

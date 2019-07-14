@@ -8,7 +8,7 @@ import org.jsoup.Jsoup
 import org.jsoup.Connection
 import android.widget.TextView
 import android.widget.Toast
-import kotlinx.android.synthetic.main.activity_attendance.*
+import kotlinx.android.synthetic.main.attendance.*
 import java.io.FileInputStream
 import java.lang.Exception
 import java.nio.charset.Charset
@@ -77,7 +77,7 @@ class AttendanceActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_attendance)
+        setContentView(R.layout.attendance)
 
         val fileInputStream:FileInputStream = openFileInput("userSetupDetails.txt")
         val userInfo = fileInputStream.readBytes().toString(Charset.defaultCharset())

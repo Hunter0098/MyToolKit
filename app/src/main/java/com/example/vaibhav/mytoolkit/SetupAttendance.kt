@@ -7,14 +7,14 @@ import android.widget.Button
 import android.widget.EditText
 import java.io.FileOutputStream
 
-class Setup : AppCompatActivity() {
+class SetupAttendance : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.setup_attendance)
 
         val actionbar = supportActionBar
-        actionbar!!.title = "Attendance Setup"
+        actionbar!!.title = "Attendance SetupAttendance"
         actionbar.setDisplayHomeAsUpEnabled(true)
 
         val buttonOnClick = findViewById<Button>(R.id.saveSetupDetails)

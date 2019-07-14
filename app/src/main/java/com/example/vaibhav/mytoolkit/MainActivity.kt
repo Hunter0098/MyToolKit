@@ -2,25 +2,22 @@ package com.example.vaibhav.mytoolkit
 
 import android.content.Intent
 import android.graphics.drawable.AnimationDrawable
-import android.net.Uri
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.v7.app.AlertDialog
 import android.view.View
-import android.webkit.WebView
 import android.widget.Button
 import android.widget.Toast
-import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.main.*
 import java.io.File
 import java.io.FileInputStream
-import java.io.FileOutputStream
 import java.nio.charset.Charset
 
 class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.main)
 
         //Wallpaper animation starts
         window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
@@ -32,7 +29,7 @@ class MainActivity : AppCompatActivity() {
 
         var timetableIsCorrect = true
         try{
-            val path = getExternalFilesDir("Setup")
+            val path = getExternalFilesDir("SetupAttendance")
             val file = File(path, "timetable.txt")
             val fileInputStream:FileInputStream = FileInputStream(file)
             var data = fileInputStream.readBytes().toString(Charset.defaultCharset())
@@ -64,7 +61,7 @@ class MainActivity : AppCompatActivity() {
             val input = fileInputStream.readBytes().toString(Charset.defaultCharset())
             fileInputStream.close()
         }catch (e:Exception){
-            val intent = Intent(this, Setup::class.java)
+            val intent = Intent(this, SetupAttendance::class.java)
             startActivity(intent)
         }
 
@@ -104,7 +101,7 @@ class MainActivity : AppCompatActivity() {
 
         val changeDetailsOnClick = findViewById<Button>(R.id.button7)
         changeDetailsOnClick.setOnClickListener {
-            val intent = Intent(this, Setup::class.java)
+            val intent = Intent(this, SetupAttendance::class.java)
             startActivity(intent)
         }
 

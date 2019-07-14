@@ -8,9 +8,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import java.io.File
 import java.io.FileInputStream
-import java.io.FileOutputStream
 import java.nio.charset.Charset
-import kotlinx.android.synthetic.main.fragment_fragment_time_table.*
 
 private const val ARG_PARAM1 = "param1"
 private const val ARG_PARAM2 = "param2"
@@ -22,14 +20,14 @@ class Fragmenttimetable : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        val view: View = inflater.inflate(R.layout.fragment_fragment_time_table, container, false)
-        val path = activity!!.getExternalFilesDir("Setup")
+        val view: View = inflater.inflate(R.layout.fragment_monday, container, false)
+        val path = activity!!.getExternalFilesDir("SetupAttendance")
         val file = File(path, "timetable.txt")
         val fileInputStream:FileInputStream = FileInputStream(file)
         var data = fileInputStream.readBytes().toString(Charset.defaultCharset())
         var dataInParts = data.split("\n")
         var textview = "textView"
-        var textviewNo = 2  //First TextView contains time of class and second TextView contains its name. (see fragment_fragment_time_table.xml)
+        var textviewNo = 2  //First TextView contains time of class and second TextView contains its name. (see fragment_monday)
 
         val day = "monday"
         val resourceIdentifierHeading = resources.getIdentifier((textview+"0"), "id", context!!.getPackageName())

@@ -1,19 +1,17 @@
 package com.example.vaibhav.mytoolkit
 
 import android.app.Activity
-import android.os.Build
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import android.support.annotation.RequiresApi
 import android.webkit.*
 import android.widget.Toast
-import kotlinx.android.synthetic.main.activity_web_kiosk_web_view.*
+import kotlinx.android.synthetic.main.web_kiosk_web_view.*
 
 class WebKioskWebView : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_web_kiosk_web_view)
+        setContentView(R.layout.web_kiosk_web_view)
 
         val backActionbar = supportActionBar
         backActionbar!!.title = "WebKiosk"

@@ -17,7 +17,7 @@
         </activity>
         <activity android:name=".SetupTimeTable">
         </activity>
-        <activity android:name=".Setup">
+        <activity android:name=".SetupAttendance">
         </activity>
         <activity android:name=".MyNotes">
         </activity>

@@ -28,18 +28,23 @@ class Fragment_sunday : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        val view: View = inflater.inflate(R.layout.fragment_fragment_sunday, container, false)
-        val path = activity!!.getExternalFilesDir("Setup")
+        val view: View = inflater.inflate(R.layout.fragment_sunday, container, false)
+        val path = activity!!.getExternalFilesDir("SetupAttendance")
         val file = File(path, "timetable.txt")
         val fileInputStream: FileInputStream = FileInputStream(file)
         var data = fileInputStream.readBytes().toString(Charset.defaultCharset())
         var dataInParts = data.split("\n")
         var textview = "textView"
         var textviewNo = 2
-        println(dataInParts)
+
+        val day = "sunday"
+        val resourceIdentifierHeading = resources.getIdentifier((textview+"0"), "id", context!!.getPackageName())
+        val txtViewHeading = view.findViewById<TextView>(resourceIdentifierHeading)
+        txtViewHeading.setText(day.capitalize())
+
         var found = 0
         for (value in dataInParts){
-            if(value == "sunday")
+            if(value == day)
             {
                 found = 1
                 continue

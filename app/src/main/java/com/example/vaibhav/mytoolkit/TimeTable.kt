@@ -2,7 +2,6 @@ package com.example.vaibhav.mytoolkit
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import android.support.design.widget.TabItem
 import android.support.design.widget.TabLayout
 import android.support.v4.view.ViewPager
 import android.support.v4.app.Fragment
@@ -10,13 +9,12 @@ import android.support.v4.app.FragmentManager
 import android.support.v4.app.FragmentPagerAdapter
 import android.content.Context
 import android.widget.ScrollView
-import android.widget.TextView
 
 class TimeTable : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_time_table)
+        setContentView(R.layout.time_table)
 
         val actionbar = supportActionBar
         actionbar!!.title = "Timetable"

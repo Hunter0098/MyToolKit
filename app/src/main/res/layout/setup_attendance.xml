@@ -8,7 +8,7 @@
         android:orientation="vertical"
         android:background="@drawable/gradient_start"
         android:padding="10dp"
-        tools:context=".Setup">
+        tools:context=".SetupAttendance">
 
 
     <LinearLayout

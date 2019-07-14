@@ -1,7 +1,5 @@
 package com.example.vaibhav.mytoolkit
 
-import android.content.Context
-import android.content.Intent
 import android.os.AsyncTask
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
@@ -39,17 +37,17 @@ class SetupTimeTable : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_setup_time_table)
+        setContentView(R.layout.setup_time_table)
 
         val actionbar = supportActionBar
-        actionbar!!.title = "Timetable Setup"
+        actionbar!!.title = "Timetable SetupAttendance"
         actionbar.setDisplayHomeAsUpEnabled(true)
 
         var data:String
         val editText = findViewById<EditText>(R.id.editText)
 
         try{
-            val path = getExternalFilesDir("Setup")
+            val path = getExternalFilesDir("SetupAttendance")
             val file = File(path, "timetable.txt")
             val fileInputStream: FileInputStream = FileInputStream(file)
             data = fileInputStream.readBytes().toString(Charset.defaultCharset())
@@ -67,7 +65,7 @@ class SetupTimeTable : AppCompatActivity() {
 
             override fun onTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
                 data = editText.text.toString()
-                val path = getExternalFilesDir("Setup")
+                val path = getExternalFilesDir("SetupAttendance")
                 val file = File(path, "timetable.txt")
                 val fileOutputStream = FileOutputStream(file)
                 fileOutputStream.write(data.toByteArray())
